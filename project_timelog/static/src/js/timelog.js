@@ -133,7 +133,6 @@ odoo.define('project_timelog.timelog', function(require){
             });
             this.c_manager = new TimeLog.Manager(this);
             this.load_timer_data();
-            console.log(parent);
         },
         start: function(){
             this.activate_click();
@@ -302,7 +301,6 @@ odoo.define('project_timelog.timelog', function(require){
                 var element = document.getElementById("clock0");
                 self.startAnim(element, 500, 10*500);
                 var id = self.config.task_id;
-                var parent = self.getParent();
                 var action = {
                     res_id: id,
                     res_model: "project.task",
@@ -313,7 +311,7 @@ odoo.define('project_timelog.timelog', function(require){
                         action_buttons: true,
                     }
                 };
-                parent.action_manager.do_action(action);
+                self.do_action(action);
                 self.end_datetime_status = true;
                 self.stop_timer();
             });
@@ -436,7 +434,6 @@ odoo.define('project_timelog.timelog', function(require){
         },
         go_to: function(event, status) {
             var id = this.config.task_id;
-            var parent = this.getParent();
             var action = false;
             var context = false;
             if (status === 'task') {
@@ -483,18 +480,15 @@ odoo.define('project_timelog.timelog', function(require){
                     }
                 };
             }
-            /*parent.action_manager.do_action(action);*/
             this.do_action(action);
         },
         show_notify_message: function(message) {
             var sticky = false;
-            var parent = this.getParent();
-            parent.action_manager.do_notify(_t('Notification'), message, sticky);
+            this.do_notify(_t('Notification'), message, sticky);
         },
         show_warn_message: function(message){
             var sticky = false;
-            var parent = this.getParent();
-            parent.action_manager.do_warn(_t('Warning'), message, sticky);
+            this.do_warn(_t('Warning'), message, sticky);
         }
     });
     function WarnMessage (parent, action) {
