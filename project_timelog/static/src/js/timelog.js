@@ -3,11 +3,12 @@ odoo.define('project_timelog.timelog', function(require){
     var bus = require('bus.bus');
     var session = require('web.session');
     var Widget = require('web.Widget');
-    var WebClient = require('web.WebClient');
+    /*var WebClient = require('web.WebClient');*/
     var Model = require('web.Model');
     var core = require('web.core');
     var _t = core._t;
     var ActionManager = require('web.ActionManager');
+    var SystrayMenu = require('web.SystrayMenu');
     var TimeLog = {};
 
     // prevent bus to be started by chat_manager.js
@@ -16,13 +17,13 @@ odoo.define('project_timelog.timelog', function(require){
     bus.bus.activated = true;
 
 
-    WebClient.include({
+    /*WebClient.include({
        show_application: function() {
            var timelog_widget = new TimeLog.TimelogWidget(this);
            timelog_widget.appendTo(this.$el.parents().find('.oe_timelog_placeholder'));
            this._super();
        }
-    });
+    });*/
     TimeLog.Manager = Widget.extend({
         init: function (widget) {
             this._super();
@@ -106,6 +107,7 @@ odoo.define('project_timelog.timelog', function(require){
     });
 
     TimeLog.TimelogWidget = Widget.extend({
+        template: 'TimeLog',
         init: function(parent){
             this._super(parent);
             var self = this;
@@ -131,6 +133,11 @@ odoo.define('project_timelog.timelog', function(require){
             });
             this.c_manager = new TimeLog.Manager(this);
             this.load_timer_data();
+            console.log(parent);
+        },
+        start: function(){
+            this.activate_click();
+            this._super();
         },
         ClientOffLine: function() {
             if (this.status === 'running' && window.Audio) {
@@ -194,11 +201,12 @@ odoo.define('project_timelog.timelog', function(require){
             });
         },
         add_favicon: function() {
-            if (this.status === 'stopped') {
+            /*I don't like this feature*/
+            /*if (this.status === 'stopped') {
                 $('link[type="image/x-icon"]').attr('href', '/project_timelog/static/src/img/favicon_play.ico');
             } else if (this.status === 'running') {
                 $('link[type="image/x-icon"]').attr('href', '/project_timelog/static/src/img/favicon_stop.ico');
-            }
+            }*/
         },
         updateView: function() {
             if(!$("#timelog_timer").length) {
@@ -244,7 +252,7 @@ odoo.define('project_timelog.timelog', function(require){
                 if (this.status === 'stopped') {
                     color = "gray";
                 } else {
-                    color = "white";
+                    color = "#337AB7";
                 }
             }
             $('#clock0').css('color', color);
@@ -475,7 +483,8 @@ odoo.define('project_timelog.timelog', function(require){
                     }
                 };
             }
-            parent.action_manager.do_action(action);
+            /*parent.action_manager.do_action(action);*/
+            this.do_action(action);
         },
         show_notify_message: function(message) {
             var sticky = false;
@@ -492,6 +501,7 @@ odoo.define('project_timelog.timelog', function(require){
         var params = action.params || {};
         parent.do_warn(params.title, params.text);
     }
+    SystrayMenu.Items.push(TimeLog.TimelogWidget);
     core.action_registry.add("action_warn", WarnMessage);
     return TimeLog;
 });

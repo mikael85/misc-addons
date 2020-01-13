@@ -1,9 +1,14 @@
 .clock {
-	font-size: 24px;
+	/*font-size: 24px;*/
 	cursor: pointer;
 	display: inline-block;
-	margin-left: 15px;
-	color: white;
+	margin-left: 10px;
+	margin-top: 14px;
+	/*line-height: 44px;*/
+	/*color: white;*/
+	/*color: #337AB7;*/
+	/*color: #333333;*/
+
 }
 
 #clock1 {

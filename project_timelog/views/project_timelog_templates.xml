@@ -10,8 +10,8 @@
             </xpath>
         </template>
 
-        <template id="timer_navbar" inherit_id="web.menu" priority="1">
-            <xpath expr="//ul[@class='nav navbar-nav navbar-right oe_systray']" position="after">
+        <!--<template id="timer_navbar" inherit_id="web.menu" priority="1">
+            <xpath expr="//ul[@class='nav navbar-nav navbar-right oe_systray']" position="before">
                 <ul class="nav navbar-nav navbar-right timelog oe_timelog_placeholder">
                     <li class="timelog" id="timelog_timer">
                           <div id="clock0" class="clock">
@@ -25,6 +25,6 @@
                     </li>
                 </ul>
             </xpath>
-        </template>
+        </template>-->
     </data>
 </openerp>
