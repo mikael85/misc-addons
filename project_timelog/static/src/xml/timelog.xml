@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-name="TimeLog">
+        <li class="timelog" id="timelog_timer">
+              <div id="clock0" class="clock"/>
+              <div id="clock1" class="clock"/>
+              <div id="clock2" class="clock"/>
+              <div id="clock3" class="clock"/>
+        </li>
+    </t>
+</templates>
