@@ -1,0 +1,657 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* project_timelog
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20180808\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-13 16:09+0000\n"
+"PO-Revision-Date: 2020-01-13 16:09+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_res_users_issue_count
+msgid "# Issues"
+msgstr "Nº incidencias"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_account_analytic_line_task_allow_logs
+#: model:ir.model.fields,field_description:project_timelog.field_project_task_type_allow_log_time
+msgid "Allow log time"
+msgstr "Permitir registro de tiempo"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_project_name
+msgid "Analytic Account"
+msgstr "Cuenta Analítica"
+
+#. module: project_timelog
+#: model:ir.model,name:project_timelog.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "Línea Analítica"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_config_settings
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: project_timelog
+#: model:ir.actions.server,name:project_timelog.action_auto_stop_timer
+msgid "Auto stop timer for user"
+msgstr "Detener automáticamente el temporizador para el usuario"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_first_weekday
+msgid "Beginning of the Week"
+msgstr "Inicio de la semana"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_config_settings
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+msgid "Company"
+msgstr "Compañía"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_config_settings
+msgid "Configure Project"
+msgstr "Configurar Proyecto"
+
+#. module: project_timelog
+#: model:ir.actions.act_window,name:project_timelog.action_config_settings
+msgid "Configure Timelog"
+msgstr "Configurar Registro de Tiempo"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_timelog
+msgid "Corrected Duration"
+msgstr "Duración Corregida"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_corrected_duration
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_corrected_duration_active
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Corrected duration"
+msgstr "Duración corregida"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_create_uid
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_create_date
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:287
+#, python-format
+msgid "Creating new subtask in state \"%s\" is forbidden."
+msgstr "Crear una subtarea en estado \"%s\" está prohibido."
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:319
+#, python-format
+msgid "Current task stage different from the stage subtasks."
+msgstr "La etapa actual difiere de la etapa de la subtarea."
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:308
+#: code:addons/project_timelog/models/project_timelog.py:378
+#, python-format
+msgid "Current user is not match user with solved task."
+msgstr "El usuario actual no concuerda con el que terminó la tarea."
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+msgid "Date"
+msgstr "Fecha"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:80
+#, python-format
+msgid "Dates cannot be changed. Use Time Correction field instead."
+msgstr "Las fechas no se pueden cambiar. Use el campo Corrección de Tiempo."
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+#: model:ir.ui.view,arch_db:project_timelog.view_config_settings
+msgid "Day"
+msgstr "Día"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Days"
+msgstr "Días"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_work_name
+msgid "Description"
+msgstr "Descripción"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_display_name
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_duration
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+#: model:ir.ui.view,arch_db:project_timelog.view_task_form2_inherited
+#: model:ir.ui.view,arch_db:project_timelog.view_timelog
+msgid "Duration"
+msgstr "Duración"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Edit timelog"
+msgstr "Editar registro de tiempo"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_end_datetime
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_end_datetime_active
+msgid "End date"
+msgstr "Fecha de finalización"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "End datetime"
+msgstr "Tiempo de finalización"
+
+#. module: project_timelog
+#: model:ir.model.fields,help:project_timelog.field_project_timelog_end_datetime_active
+msgid "End tate. Equal to now if timer is not stopped yet."
+msgstr "End tate. Equal to now if timer is not stopped yet."
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:310
+#: code:addons/project_timelog/models/project_timelog.py:315
+#: code:addons/project_timelog/models/project_timelog.py:318
+#: code:addons/project_timelog/models/project_timelog.py:325
+#: code:addons/project_timelog/models/project_timelog.py:347
+#, python-format
+msgid "Error."
+msgstr "Error."
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_tree
+msgid "Hours"
+msgstr "Horas"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_id
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:316
+#, python-format
+msgid "In the current state of the task can not be created timelogs."
+msgstr "No se pueden crear registros de tiempo en estado actual de la tarea."
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog___last_update
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_write_uid
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_write_date
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: project_timelog
+#: selection:timelog.config.settings,first_weekday:0
+msgid "Monday"
+msgstr "Lunes"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Months"
+msgstr "Meses"
+
+#. module: project_timelog
+#: model:ir.actions.act_window,name:project_timelog.action_my_timelog
+#: model:ir.ui.menu,name:project_timelog.menu_new_my_timelog_content
+msgid "My Timelog"
+msgstr "Mi Registro de Tiempo"
+
+#. module: project_timelog
+#. openerp-web
+#: code:addons/project_timelog/static/src/js/timelog.js:152
+#, python-format
+msgid "No internet connection"
+msgstr "No hay conexión a internet"
+
+#. module: project_timelog
+#. openerp-web
+#: code:addons/project_timelog/static/src/js/timelog.js:496
+#, python-format
+msgid "Notification"
+msgstr "Notificación"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:77
+#, python-format
+msgid "Only manager can enter positive time."
+msgstr "Solo el administrador puede introducir tiempo positivo."
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+msgid "Partner"
+msgstr "Partner"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:311
+#, python-format
+msgid "Please, stop previous timer."
+msgstr "Por favor detenga el temporizador anterior."
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_account_analytic_line_project_id
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+msgid "Project Issue"
+msgstr "Incidencia proyecto"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+msgid "Project Task Work"
+msgstr "Actividad de la tarea del Proyecto"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Projects"
+msgstr "Proyectos"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_time_subtasks
+msgid "Set completion time"
+msgstr "Establecer tiempo de finalización"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_good_time_day
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_good_time_week
+msgid "Set good time"
+msgstr "Establecer buen tiempo"
+
+#. module: project_timelog
+#: model:ir.model.fields,help:project_timelog.field_timelog_config_settings_good_time_day
+msgid "Set in excess of the time allowed for the day"
+msgstr "Establecer exceso del tiempo permitido para el día"
+
+#. module: project_timelog
+#: model:ir.model.fields,help:project_timelog.field_timelog_config_settings_good_time_week
+msgid "Set in excess of the time allowed for the week"
+msgstr "Establecer exceso del tiempo permitido para la semana"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_normal_time_day
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_normal_time_week
+msgid "Set normal time"
+msgstr "Establecer tiempo normal"
+
+#. module: project_timelog
+#: model:ir.model.fields,help:project_timelog.field_timelog_config_settings_time_warning_subtasks
+msgid "Set the time for how long the timer should warn that it will be stopped"
+msgstr "Establecer el tiempo para el que el temporizador debería avisar que se detendrá"
+
+#. module: project_timelog
+#: model:ir.model.fields,help:project_timelog.field_timelog_config_settings_time_subtasks
+msgid "Set the time when the timer should stop"
+msgstr "Establecer el tiempo para el que el temporizador debería detenerse"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_timelog_config_settings_time_warning_subtasks
+msgid "Set warning time"
+msgstr "Establecer tiempo de advertencia"
+
+#. module: project_timelog
+#: model:ir.model.fields,help:project_timelog.field_timelog_config_settings_normal_time_day
+msgid "Setting time standards provided throughout the day"
+msgstr "Establece los tiempos estandar provistos para el día"
+
+#. module: project_timelog
+#: model:ir.model.fields,help:project_timelog.field_timelog_config_settings_normal_time_week
+msgid "Setting time standards provided throughout the week"
+msgstr "Establece los tiempos estandar provistos para la semana"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_account_analytic_line_stage_id
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_stage_id
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Stage name"
+msgstr "Nombre de la etapa"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_start_datetime
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Start datetime"
+msgstr "Tiempo de inicio"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_account_analytic_line_status
+msgid "Status"
+msgstr "Estado"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_task_datetime_stopline
+msgid "Stopline"
+msgstr "Línea de parada"
+
+#. module: project_timelog
+#: model:mail.message.subtype,description:project_timelog.mt_timelog_stopline
+#: model:mail.message.subtype,name:project_timelog.mt_timelog_stopline
+#: model:mail.message.subtype,name:project_timelog.mt_timelog_stopline_change
+msgid "Stopline changed"
+msgstr "Línea de parada cambiada"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Subtask"
+msgstr "Subtarea"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Subtask name"
+msgstr "Nombre de la subtarea"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+#: model:ir.ui.view,arch_db:project_timelog.view_config_settings
+msgid "Subtasks"
+msgstr "Subtareas"
+
+#. module: project_timelog
+#: selection:timelog.config.settings,first_weekday:0
+msgid "Sunday"
+msgstr "Domingo"
+
+#. module: project_timelog
+#: model:ir.model,name:project_timelog.model_project_task
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_task_id
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_work_id
+#: model:ir.model.fields,field_description:project_timelog.field_res_users_active_task_id
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+msgid "Task"
+msgstr "Tarea"
+
+#. module: project_timelog
+#: model:ir.model,name:project_timelog.model_project_task_type
+msgid "Task Stage"
+msgstr "Etapa de la tarea"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_task_name
+msgid "Task Title"
+msgstr "Título de tarea"
+
+#. module: project_timelog
+#: model:ir.actions.act_window,name:project_timelog.action_work
+#: model:ir.ui.menu,name:project_timelog.menu_work
+msgid "Task Works"
+msgstr "Actividades de las tareas"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_account_analytic_line_combined_name
+msgid "Task and Summary"
+msgstr "Tarea y sumario"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Tasks"
+msgstr "Tareas"
+
+#. module: project_timelog
+#: sql_constraint:account.analytic.line:0
+msgid "The name of the subtask must be unique per stage!"
+msgstr "El nombre de la subtarea debe ser único por estapa!"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "The time when you end the timer"
+msgstr "El momento en que detuvo el temporizador"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "The time when you start the timer"
+msgstr "El momento en el que inició el temporizador"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:384
+#, python-format
+msgid "The timer already has stopped."
+msgstr "El temporizador ya se detuvo."
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "This week (monday)"
+msgstr "Esta semana (lunes)"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "This week (sunday)"
+msgstr "Esta semana (domingo)"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_time_correction
+msgid "Time Correction"
+msgstr "Corrección de tiempo"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_account_analytic_line_unit_amount_computed
+msgid "Time Spent"
+msgstr "Tiempo utilizado"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Time correction"
+msgstr "Corrección de tiempo"
+
+#. module: project_timelog
+#: model:ir.actions.act_window,name:project_timelog.action_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_account_analytic_line_timelog_ids
+#: model:ir.ui.menu,name:project_timelog.menu_new_timelog_content
+#: model:ir.ui.menu,name:project_timelog.menu_timelog_content
+#: model:ir.ui.view,arch_db:project_timelog.view_timelog_calendar
+#: model:ir.ui.view,arch_db:project_timelog.view_timelog_graph
+msgid "Timelog"
+msgstr "Registro de tiempo"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_config_settings
+msgid "Timelog Management"
+msgstr "Administración de registros de tiempo"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_res_users_timer_status
+msgid "Timer status"
+msgstr "Estado del temporizador"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "To correct the mistake of the recorded time"
+msgstr "Para corregir errores del tiempo registrado"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Today"
+msgstr "Hoy"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_tree
+msgid "Total"
+msgstr "Total"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_timelog
+msgid "Total Corrected Duration"
+msgstr "Duración total de las correcciones"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_timelog
+msgid "Total Duration"
+msgstr "Total Duration"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_task_form2_inherited
+msgid "Total time"
+msgstr "Tiempo total"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Total time, after taking into account errors"
+msgstr "Tiempo total, después de haber tomado en cuenta errores"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_my_timelog_form
+msgid "Total time, before taking into account errors"
+msgstr "Tiempo total, antes de tomar en cuenta errores"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:326
+#, python-format
+msgid "Unable to create logs until it is modified or deleted stopline."
+msgstr "No es posible crear registros hasta que se modifique o elimine la línea de parada."
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+#: model:ir.ui.view,arch_db:project_timelog.view_project_task_work_ext_filter
+#: model:ir.ui.view,arch_db:project_timelog.view_timelog
+msgid "User"
+msgstr "Usuario"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_account_analytic_line_user_current
+msgid "User current"
+msgstr "Usuario actual"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_project_timelog_user_id
+msgid "User name"
+msgstr "Nombre de usuario"
+
+#. module: project_timelog
+#: model:ir.model,name:project_timelog.model_res_users
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: project_timelog
+#. openerp-web
+#: code:addons/project_timelog/static/src/js/timelog.js:501
+#, python-format
+msgid "Warning"
+msgstr "Atención"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:307
+#: code:addons/project_timelog/models/project_timelog.py:377
+#: code:addons/project_timelog/models/project_timelog.py:383
+#, python-format
+msgid "Warning."
+msgstr "Atención."
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+#: model:ir.ui.view,arch_db:project_timelog.view_config_settings
+msgid "Week"
+msgstr "Semana"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Week Sunday"
+msgstr "Domingo semanal"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Weeks Monday"
+msgstr "Lunes semanal"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.timelog_search_view
+msgid "Weeks Sunday"
+msgstr "Domingo semanal"
+
+#. module: project_timelog
+#: model:ir.model.fields,field_description:project_timelog.field_res_users_active_work_id
+msgid "Work"
+msgstr "Trabajo"
+
+#. module: project_timelog
+#: code:addons/project_timelog/models/project_timelog.py:348
+#, python-format
+msgid "Yesterday's timelogs."
+msgstr "Registros de tiempos de ayer."
+
+#. module: project_timelog
+#. openerp-web
+#: code:addons/project_timelog/static/src/js/timelog.js:157
+#, python-format
+msgid "You are online"
+msgstr "Usted está en línea"
+
+#. module: project_timelog
+#: model:ir.ui.view,arch_db:project_timelog.view_config_settings
+msgid "or"
+msgstr "o"
+
+#. module: project_timelog
+#: model:ir.model,name:project_timelog.model_project_timelog
+msgid "project timelog"
+msgstr "Registro de tiempo del Proyecto"
+
+#. module: project_timelog
+#: model:ir.model,name:project_timelog.model_timelog_config_settings
+msgid "timelog.config.settings"
+msgstr "timelog.config.settings"
